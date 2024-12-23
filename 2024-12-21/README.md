@@ -85,15 +85,6 @@ src/
 
 ---
 
-## Output
-
-- Displays:  
-  - A **headline** ("Headline Large") styled with material design.  
-  - Body text introducing React Native's features and use cases.  
-  - Two **buttons** with different styles (`contained` and `outlined`).  
-
----
-
 ## How to Import New Libraries
 
 ### **React Native Paper**
