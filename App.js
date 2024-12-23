@@ -2,7 +2,7 @@ import { StyleSheet, View , ScrollView} from "react-native";
 import { PaperProvider } from 'react-native-paper';
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Home from "./components/2024-12-21/Home";
+import Home from "./components/Home";
 
 export default function Index() {
   return (
