@@ -24,6 +24,7 @@ This repository is regularly updated with weekly practicals and assignments to s
 | Date       |      | Details                                             |
 |------------|------|---------------------------------------------------|
 | 2024-12-17 | Day 1 | [View](./2024-12-17/)                      |
+| 2024-12-21 | Exercise | [View](./2024-12-21/)                      |
 ---
 
 ## 🚀 Installation
