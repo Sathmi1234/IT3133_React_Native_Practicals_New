@@ -1,33 +1,34 @@
-import { Image,  StyleSheet,  Text, View } from "react-native";
+import { StyleSheet, View , ScrollView} from "react-native";
+import { PaperProvider } from 'react-native-paper';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Home from "./components/2024-12-21/Home";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Image source={require("./assets/favicon.png")} style={styles.logo}/>
-      <Text style={styles.textstyle}>Hello World!!</Text>
-      <Text style={styles.subtext}>My First React Native Coss Platform App</Text>
-    </View>
+    <PaperProvider>
+      <SafeAreaView>
+      <ScrollView>
+        <View style={styles.container}>
+          <Home/>
+          <StatusBar style="auto" />
+        </View>
+      </ScrollView>
+      </SafeAreaView>
+    </PaperProvider>
   );
 }
 
-const styles= StyleSheet.create({
-  logo:{
-    width:200,
-    height:200,
-    borderWidth:2,
-    borderStyle:"dotted"
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
-  textstyle:{
-    fontFamily:"Times New Roman",
-    fontSize: 45,
-  },
-  subtext:{
-    fontWeight:500
+  body: {
+    padding: 5,
+    textAlign: "justify",
+    color:'black'
   }
-})
+});
