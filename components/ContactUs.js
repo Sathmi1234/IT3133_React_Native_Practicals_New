@@ -1,7 +1,11 @@
+import { useNavigation } from "@react-navigation/native";
+import { useState } from "react";
 import { KeyboardAvoidingView,StyleSheet, Platform, View ,ScrollView} from "react-native";
 import { Button, Text, TextInput } from "react-native-paper";
 
 export default function ContactUs(){
+    const [name, setName]=useState();
+    const navigation = useNavigation();
     return(
         <KeyboardAvoidingView
             behavior={Platform.OS==='ios'?'padding':'height'}
@@ -41,7 +45,7 @@ export default function ContactUs(){
                     <View style={styles.footer}>
                         <Text>MyApp © 2024</Text>
                     </View>
-                    <Button mode="outlined" >
+                    <Button mode="outlined" onPress={() => navigation.popTo('Home')}>
                         Go To Home
                     </Button>
                 </View>
