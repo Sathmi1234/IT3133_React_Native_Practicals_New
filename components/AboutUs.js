@@ -1,11 +1,12 @@
-import { View } from "react-native";
-import { Text } from "react-native-paper";
+import { Image, View } from "react-native";
+import { Button, Divider, Text } from "react-native-paper";
 
 export default function AboutUs() {
     return (
         <ScrollView contentContainerStyle={styles.scrollView}>
-            <View>
+            <View style={styles.container}>
                 <Image
+                    style={styles.about}
                     source={require('../assets/about_us.jpg')}
                 />
                 <Text variant="headlineLarge">Let's Get to Know</Text>
@@ -22,3 +23,22 @@ export default function AboutUs() {
         </ScrollView>
     );
 }
+const styles = StyleSheet.create({
+    container: {
+        flexDirection: 'column',
+        backgroundColor: '#fff',
+        justifyContent: 'space-between',
+        padding: 10
+    },
+    about:{
+        width:300,
+        height:300
+    },
+    body: {
+        padding: 8,
+        textAlign: 'justify'
+    },
+    scrollView: {
+        flexGrow: 1,
+    },
+});
