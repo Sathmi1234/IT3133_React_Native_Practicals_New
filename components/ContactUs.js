@@ -1,6 +1,5 @@
-import { KeyboardAvoidingView, Platform, View } from "react-native";
-import { Text } from "react-native-paper";
-import { ScrollView } from "react-native-web";
+import { KeyboardAvoidingView,StyleSheet, Platform, View ,ScrollView} from "react-native";
+import { Button, Text, TextInput } from "react-native-paper";
 
 export default function ContactUs(){
     return(
@@ -23,7 +22,7 @@ export default function ContactUs(){
                             Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
                         </Text>
                         <View style={styles.input}>
-                            <TextInput label="Name" mode='outlined' value={name} onChangeText={setName} />
+                            <TextInput label="Name" mode='outlined' />
                         </View>
                         <View style={styles.input}>
                             <TextInput label="Email" mode='outlined' keyboardType='email-address' />
