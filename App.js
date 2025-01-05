@@ -1,14 +1,24 @@
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StyleSheet, View, ScrollView, KeyboardAvoidingView,Platform } from "react-native";
 import { PaperProvider } from 'react-native-paper';
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import Home from "./components/Home";
+import ContactUs from "./components/ContactUs";
+import AboutUs from "./components/AboutUs";
 
 export default function Index() {
+  const Stack = createNativeStackNavigator();
   return (
     <PaperProvider>
       <SafeAreaProvider>
-        <SafeAreaView>
-
-        </SafeAreaView>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name="Home" component={Home}/>
+            <Stack.Screen name="Contact" component={ContactUs}/>
+            <Stack.Screen name="About" component={AboutUs}/>
+          </Stack.Navigator>
+        </NavigationContainer>
       </SafeAreaProvider>
     </PaperProvider>
   );
