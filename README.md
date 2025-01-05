@@ -24,7 +24,10 @@ This repository is regularly updated with weekly practicals and assignments to s
 | Date       |      | Details                                             |
 |------------|------|---------------------------------------------------|
 | 2024-12-17 | Day 1 | [View](./2024-12-17/)                      |
-| 2024-12-21 | Exercise | [View](./2024-12-21/)                      |
+| 2024-12-21 | Day 2 & Exercise | [View](./2024-12-21/)                      |
+| 2024-12-22 | Currency Convertor App | [View](https://github.com/Sathmi1234/IT3133_CurrencyConverter_ReactNativeApp)                      |
+| 2024-12-31 | Day 3 | [View](./2024-12-31/)                      |
+| 2025-01-01 | Assignment 3 (Student Care App)| [View](https://github.com/Sathmi1234/IT3133_StudentCare_ReactNativeApp)                      |
 ---
 
 ## 🚀 Installation
