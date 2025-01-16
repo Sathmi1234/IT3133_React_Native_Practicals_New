@@ -18,6 +18,7 @@ export default function Profile({ route }) {
             <Text>Email: {student.email}</Text>
             <Text>Blood Group: {student.blood_group}</Text>
             <Text>Course: {userCourse.name}</Text>
+            <Text>Subjects:</Text>
             {
                 courseSubject.map((item,index)=>(
                     <View>
